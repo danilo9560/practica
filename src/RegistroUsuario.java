@@ -18,7 +18,7 @@ public class RegistroUsuario {
        // panel.setLayout(new GridLayout(6, 2, 10, 10));
         panel.setBounds(50,50,800,300);
         panel.setPreferredSize(new Dimension(400,300));
-        panel.setBackground(Color.decode("#ADD8E6"));
+        panel.setBackground(Color.decode("#ffaaff"));
 
         // Crear etiquetas y campos de texto
         JLabel lblEstudiante = new JLabel("Estudiante:");
