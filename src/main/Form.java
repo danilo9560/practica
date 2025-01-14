@@ -13,8 +13,10 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import main.comp.InputLabel;
 import main.comp.CPanel;
+import main.comp.CBtn;
 
 public class Form extends CPanel{
+  public  CBtn loginBtn = new CBtn("Iniciar Sesión");
   public Form(){
     super(20);
     // this.setBounds(130, 160, 500, 40);
@@ -22,7 +24,7 @@ public class Form extends CPanel{
     // this.setLayout(new GridLayout(2,1));
     this.setLayout(new GridBagLayout());
     GridBagConstraints gbc = new GridBagConstraints();
-    gbc.fill = GridBagConstraints.BOTH;
+    // gbc.fill = GridBagConstraints.BOTH;
     this.setBackground(Color.decode("#ffddff"));
     // this.setMargin(new Insets(5, 20, 5, 20));
 
@@ -37,7 +39,14 @@ public class Form extends CPanel{
     InputLabel password = new InputLabel();
     password.setTitle("Contraseña");
     password.setText("Ingrese Su Contraseña");
-    InputLabel edad = new InputLabel();
+    // InputLabel edad = new InputLabel();
+
+   
+    // loginBtn.("Contraseña");
+    // loginBtn.setText("Ingrese Su Contraseña");
+    loginBtn.setBackground(Color.decode("#ff55ff"));
+    loginBtn.setOpaque(true);
+  
 
     gbc.gridx = 0;
     gbc.gridy = 0;
@@ -61,10 +70,10 @@ public class Form extends CPanel{
     this.add(password,gbc);
 
     gbc.gridx = 0;
-    gbc.gridy = 1;
-    // gbc.weightx = 1.0;
+    gbc.gridy = 3;
+    gbc.weightx = 0.5;
     // gbc.weighty = 0.5;
-    gbc.gridwidth = 2;
-    // this.add(edad,gbc);
+    gbc.gridwidth = 1;
+    this.add(loginBtn,gbc);
   }
 }
