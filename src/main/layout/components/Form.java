@@ -1,4 +1,4 @@
-package main;
+package main.layout.components;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -11,9 +11,10 @@ import java.awt.Insets;
 import javax.swing.BoxLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import main.comp.InputLabel;
-import main.comp.CPanel;
-import main.comp.CBtn;
+
+import main.functions.InputLabel;
+import main.layout.elements.CBtn;
+import main.layout.elements.CPanel;
 
 public class Form extends CPanel{
   public  CBtn loginBtn = new CBtn("Iniciar Sesión");

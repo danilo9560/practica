@@ -1,4 +1,4 @@
-package main.comp;
+package main.functions;
 
 import java.awt.Color;
 import java.awt.Dimension;

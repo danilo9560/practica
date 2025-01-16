@@ -2,8 +2,9 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import main.Form;
-import main.Home;
+
+import main.layout.components.Form;
+import main.layout.template.Home;
 
 public class Main {
 
@@ -21,7 +22,6 @@ public class Main {
         gbc.weightx = 1.0; // Expandir horizontalmente
         gbc.weighty = 1.0; // Expandir verticalmente
 
-
         // Crear el panel principal
         JPanel mainContainer = new JPanel();
 
@@ -35,7 +35,6 @@ public class Main {
         gbc.weighty = 1;
         frame.add(mainContainer,gbc);
 
-
         // Crear el formulario
         Form loginForm = new Form();
         loginForm.setBounds(50,50,800,300);
@@ -43,7 +42,6 @@ public class Main {
         // gbcF.fill = GridBagConstraints.BOTH;
 
         Home home = new Home();
-
 
         gbcF.gridx = 0;
         gbcF.gridy = 0;

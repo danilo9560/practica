@@ -1,4 +1,4 @@
-package main.comp;
+package main.functions;
 
 import java.awt.GridLayout;
 import java.awt.Image;
@@ -6,6 +6,8 @@ import java.awt.Image;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+
+import main.layout.elements.CBtn;
 
 public class OptionHome extends JPanel {
   public  OptionHome(String srcImage, String textBtn){
